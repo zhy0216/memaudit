@@ -1,0 +1,12 @@
+{
+  "source": "THUIR/MemoryBench",
+  "subset": "Locomo-0",
+  "split": "test",
+  "huggingface_url": "https://huggingface.co/datasets/THUIR/MemoryBench",
+  "paper": "https://arxiv.org/abs/2510.17281",
+  "license": "MIT",
+  "fetched_at": "2026-02-14T08:35:57.157Z",
+  "samples": 5,
+  "original_total": 5,
+  "citation": "@article{ai2025memorybench,\n  title={MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems},\n  author={Ai, Qingyao and Tang, Yichen and Wang, Changyue and Long, Jianming and Su, Weihang and Liu, Yiqun},\n  journal={arXiv preprint arXiv:2510.17281},\n  year={2025}\n}"
+}
