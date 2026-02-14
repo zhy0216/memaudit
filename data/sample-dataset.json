@@ -1,0 +1,32 @@
+{
+  "id": "sample-memory-audit",
+  "conversations": [
+    {
+      "id": "conv-intro",
+      "turns": [
+        { "role": "user", "content": "Hi! My name is Sarah and I'm a software engineer.", "timestamp": "2024-01-15T09:00:00Z" },
+        { "role": "assistant", "content": "Hello Sarah! It's great to meet a fellow software engineer. What technologies do you work with?" },
+        { "role": "user", "content": "I mainly work with Python and TypeScript. I also have a dog named Max.", "timestamp": "2024-01-15T09:01:00Z" },
+        { "role": "assistant", "content": "Python and TypeScript are a great combination! And Max sounds like a lovely companion." }
+      ],
+      "facts": [
+        { "id": "fact-1", "content": "User's name is Sarah", "category": "personal", "timestamp": "2024-01-15T09:00:00Z" },
+        { "id": "fact-2", "content": "User is a software engineer", "category": "personal", "timestamp": "2024-01-15T09:00:00Z" },
+        { "id": "fact-3", "content": "User works with Python and TypeScript", "category": "preference", "timestamp": "2024-01-15T09:01:00Z" },
+        { "id": "fact-4", "content": "User has a dog named Max", "category": "personal", "timestamp": "2024-01-15T09:01:00Z" }
+      ]
+    },
+    {
+      "id": "conv-update",
+      "turns": [
+        { "role": "user", "content": "Actually, I've switched to mainly using Rust now instead of Python.", "timestamp": "2024-03-01T10:00:00Z" },
+        { "role": "assistant", "content": "That's interesting! Rust is known for its performance and safety. What prompted the switch?" },
+        { "role": "user", "content": "I joined a new team that focuses on systems programming.", "timestamp": "2024-03-01T10:01:00Z" }
+      ],
+      "facts": [
+        { "id": "fact-5", "content": "User now mainly uses Rust instead of Python", "category": "preference", "timestamp": "2024-03-01T10:00:00Z", "supersedes": "fact-3" },
+        { "id": "fact-6", "content": "User joined a new team doing systems programming", "category": "event", "timestamp": "2024-03-01T10:01:00Z" }
+      ]
+    }
+  ]
+}
