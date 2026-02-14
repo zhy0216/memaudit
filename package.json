@@ -6,14 +6,16 @@
     "memaudit": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsup src/cli.ts --format esm --dts",
+    "build": "tsup src/cli.ts src/adapters/memorybench.ts --format esm --dts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "fetch:memorybench": "npm run build && node scripts/fetch-memorybench.js"
   },
   "dependencies": {
-    "ai": "^3.0.0",
     "@ai-sdk/openai": "^0.0.40",
+    "ai": "^3.0.0",
+    "apache-arrow": "^21.1.0",
     "commander": "^12.0.0",
     "zod": "^3.22.0"
   },
